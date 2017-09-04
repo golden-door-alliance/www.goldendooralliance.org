@@ -53,6 +53,222 @@
           <p><img src="images/statue-of-liberty.jpg" class="img-fluid" alt="The Statue of Liberty"></p>
         </div>
       </div>
+      <hr>
+      <h2>Join the Golden Door Alliance</h2>
+
+      <form action="http://9ac205ea.ngrok.io/charge" method="post" id="signup-form">
+        <p>We're excited to have you join our work to support immigrants and immigration in America!</p>
+        <p>Because we contribute the money we raise to political campaigns, you must have a green card
+          or be a United States citizen to join.</p>
+
+        <div class="card">
+          <h4 class="card-header">Contact info</h4>
+          <div class="card-body">
+            <p>First off, we need to know how to contact you:</p>
+
+            <div class="form-group">
+              <label for="preferred-name">Preferred name (e.g. "Isabella" or "Mr. Wong")</label>
+              <div><input type="text" class="form-control" id="preferred-name" name="preferredName"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div><input type="text" class="form-control" id="email" name="email"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Cell phone</label>
+              <div><input type="text" class="form-control" id="phone" name="phone"></div>
+            </div>
+
+            <p>By signing up, you're giving us permission to text you about your monthly actions.</p>
+
+            <p>
+              Speaking of monthly actions, how many actions are you willing to take a month?
+              (Typically, they will be a short call to one of your elected representatives.)
+            </p>
+
+            <div class="form-group">
+              <label for="number-of-actions" class="form-check-label">
+                <input type="radio" class="form-check-input" id="number-of-actions" name="numberOfActions" value="1">
+                1
+              </label>
+              &nbsp;
+              <label for="number-of-actions" class="form-check-label">
+                <input type="radio" class="form-check-input" id="number-of-actions" name="numberOfActions" value="2">
+                2
+              </label>
+              &nbsp;
+              <label for="number-of-actions" class="form-check-label">
+                <input type="radio" class="form-check-input" id="number-of-actions" name="numberOfActions" value="3">
+                3
+              </label>
+              &nbsp;
+              <label for="number-of-actions" class="form-check-label">
+                <input type="radio" class="form-check-input" id="number-of-actions" name="numberOfActions" value="4">
+                4
+              </label>
+              &nbsp;
+              <label for="number-of-actions" class="form-check-label">
+                <input type="radio" class="form-check-input" id="number-of-actions" name="numberOfActions" value="∞">
+                As many as are needed!
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-header">Legal stuff</h4>
+          <div class="card-body">
+            <p>The government requires that, as a political action committee, we collect the following information from you:</p>
+
+            <div class="form-group">
+              <label for="full-name">Full legal name</label>
+              <div id="full-legal-name"></div>
+              <div><input type="text" class="form-control" id="full-legal-name" name="fullLegalName"></div>
+            </div>
+            <div class="form-group">
+              <label for="occupation">Occupation</label>
+              <div><input type="text" class="form-control" id="occupation" name="occupation"></div>
+            </div>
+            <div class="form-group">
+              <label for="employer">Employer</label>
+              <div><input type="text" class="form-control" id="employer" name="employer"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-header">Voting</h4>
+          <div class="card-body">
+            <p>Are you registered to vote?</p>
+
+            <div class="form-check">
+              <label for="registered-to-vote" class="form-check-label">
+                <input type="radio" class="form-check-input" id="registered-to-vote" name="registeredToVote" value="yes-up-to-date">
+                Yes, and my address is up to date
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="registered-to-vote" class="form-check-label">
+                <input type="radio" class="form-check-input" id="registered-to-vote" name="registeredToVote" value="yes-not-up-to-date">
+                Yes, but my address is not up to date
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="registered-to-vote" class="form-check-label">
+                <input type="radio" class="form-check-input" id="registered-to-vote" name="registeredToVote" value="no-need-to-register">
+                No, but I am a citizen and would like to register
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="registered-to-vote" class="form-check-label">
+                <input type="radio" class="form-check-input" id="registered-to-vote" name="registeredToVote" value="no-green-card">
+                No, and I am a green card holder and cannot vote
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="voting-address-line1">Voting address</label>
+              <div><input type="text" class="form-control" id="voting-address-line1" name="votingAddressLine1"></div>
+            </div>
+            <div class="form-group">
+              <label for="voting-address-line2">Address line 2</label>
+              <div><input type="text" class="form-control" id="voting-address-line2" name="votingAddressLine2"></div>
+            </div>
+            <div class="form-group">
+              <label for="voting-address-city">City</label>
+              <div><input type="text" class="form-control" id="voting-address-city" name="votingAddressCity"></div>
+            </div>
+            <div class="form-group">
+              <label for="voting-address-state">State</label>
+              <div><input type="text" class="form-control" id="voting-address-state" name="votingAddressState"></div>
+            </div>
+            <div class="form-group">
+              <label for="voting-address-zip">Zip</label>
+              <div><input type="text" class="form-control" id="voting-address-zip" name="votingAddressZip"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-header">Contributions</h4>
+          <div class="card-body">
+            <p>How much would you like to contribute each month? At least 90% of your contribution will go to pro-immigration candidates. (No more than 10% goes towards keeping Golden Door's lights on.)</p>
+
+            <div class="form-group">
+              <label for="contribution" class="form-check-label">
+                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="5">
+                $5
+              </label>
+              &nbsp;
+              <label for="contribution" class="form-check-label">
+                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="9">
+                $9
+              </label>
+              &nbsp;
+              <label for="contribution" class="form-check-label">
+                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="25">
+                $25
+              </label>
+              &nbsp;
+              <label for="contribution" class="form-check-label">
+                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="49">
+                $49
+              </label>
+              &nbsp;
+              <label for="contribution" class="form-check-label">
+                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="99">
+                $99
+              </label>
+              &nbsp;
+              <label for="contribution" class="form-check-label">
+                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="416.66">
+                $416.66 (max allowed by law)
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="card-element">Credit or debit card</label>
+              <div id="card-element" class="form-control"></div>
+              <div id="card-errors" role="alert" class="form-control-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="billing-name">Name on card</label>
+              <div><input type="text" class="form-control" id="billing-name" name="billingName"></div>
+            </div>
+            <div class="form-group">
+              <label for="billing-address-line1">Billing address</label>
+              <div><input type="text" class="form-control" id="billing-address-line1" name="BillingAddressLine1"></div>
+            </div>
+            <div class="form-group">
+              <label for="billing-address-line2">Address line 2</label>
+              <div><input type="text" class="form-control" id="billing-address-line2" name="BillingAddressLine2"></div>
+            </div>
+            <div class="form-group">
+              <label for="billing-address-city">City</label>
+              <div><input type="text" class="form-control" id="billing-address-city" name="BillingAddressCity"></div>
+            </div>
+            <div class="form-group">
+              <label for="billing-address-state">State</label>
+              <div><input type="text" class="form-control" id="billing-address-state" name="BillingAddressState"></div>
+            </div>
+            <div class="form-group">
+              <label for="billing-address-zip">Zip</label>
+              <div><input type="text" class="form-control" id="billing-address-zip" name="BillingAddressZip"></div>
+            </div>
+          </div>
+        </div>
+
+        <p>And that's it! Click the button below to join the Golden Door Alliance.</p>
+
+        <button type="submit" class="btn btn-secondary">Sign up</button>
+      </form>
+
+      <div>
+        <p>&copy; 2017 Golden Door Alliance</p>
+      </div>
     </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
