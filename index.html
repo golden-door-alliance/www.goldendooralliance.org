@@ -56,7 +56,7 @@
       <hr>
       <h2 class="text-center">Join the Golden Door Alliance</h2>
 
-      <form action="http://9ac205ea.ngrok.io/charge" method="post" id="signup-form">
+      <form action="https://9ac205ea.ngrok.io/charge" method="post" id="signup-form">
         <p>We're excited to have you join our work to support immigrants and immigration in America!</p>
         <p>Because we contribute the money we raise to political campaigns, you must have a green card
           or be a United States citizen to join.</p>
@@ -68,15 +68,15 @@
 
             <div class="form-group">
               <label for="preferred-name">Preferred name (e.g. "Isabella" or "Mr. Wong")</label>
-              <div><input type="text" class="form-control" id="preferred-name" name="preferredName"></div>
+              <div><input type="text" class="form-control" id="preferred-name" name="preferredName" required></div>
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <div><input type="text" class="form-control" id="email" name="email"></div>
+              <div><input type="email" class="form-control" id="email" name="email" required></div>
             </div>
             <div class="form-group">
               <label for="phone">Cell phone</label>
-              <div><input type="text" class="form-control" id="phone" name="phone"></div>
+              <div><input type="tel" class="form-control" id="phone" name="phone" required></div>
             </div>
 
             <p>By signing up, you're giving us permission to text you about your monthly actions.</p>
@@ -88,7 +88,7 @@
 
             <div class="form-group">
               <label for="number-of-actions" class="form-check-label">
-                <input type="radio" class="form-check-input" id="number-of-actions" name="numberOfActions" value="1">
+                <input type="radio" class="form-check-input" id="number-of-actions" name="numberOfActions" value="1" required>
                 1
               </label>
               &nbsp;
@@ -123,15 +123,15 @@
             <div class="form-group">
               <label for="full-name">Full legal name</label>
               <div id="full-legal-name"></div>
-              <div><input type="text" class="form-control" id="full-legal-name" name="fullLegalName"></div>
+              <div><input type="text" class="form-control" id="full-legal-name" name="fullLegalName" required></div>
             </div>
             <div class="form-group">
               <label for="occupation">Occupation</label>
-              <div><input type="text" class="form-control" id="occupation" name="occupation"></div>
+              <div><input type="text" class="form-control" id="occupation" name="occupation" required></div>
             </div>
             <div class="form-group">
               <label for="employer">Employer</label>
-              <div><input type="text" class="form-control" id="employer" name="employer"></div>
+              <div><input type="text" class="form-control" id="employer" name="employer" required></div>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@
 
             <div class="form-check">
               <label for="registered-to-vote" class="form-check-label">
-                <input type="radio" class="form-check-input" id="registered-to-vote" name="registeredToVote" value="yes-up-to-date">
+                <input type="radio" class="form-check-input" id="registered-to-vote" name="registeredToVote" value="yes-up-to-date" required>
                 Yes, and my address is up to date
               </label>
             </div>
@@ -184,7 +184,7 @@
             </div>
             <div class="form-group">
               <label for="voting-address-zip">Zip</label>
-              <div><input type="text" class="form-control" id="voting-address-zip" name="votingAddressZip"></div>
+              <div><input type="number" class="form-control" id="voting-address-zip" name="votingAddressZip"></div>
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@
 
             <div class="form-group">
               <label for="contribution" class="form-check-label">
-                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="5">
+                <input type="radio" class="form-check-input" id="contribution" name="contribution" value="5" required>
                 $5
               </label>
               &nbsp;
@@ -233,11 +233,11 @@
             </div>
             <div class="form-group">
               <label for="billing-name">Name on card</label>
-              <div><input type="text" class="form-control" id="billing-name" name="billingName"></div>
+              <div><input type="text" class="form-control" id="billing-name" name="billingName" required></div>
             </div>
             <div class="form-group">
               <label for="billing-address-line1">Billing address</label>
-              <div><input type="text" class="form-control" id="billing-address-line1" name="BillingAddressLine1"></div>
+              <div><input type="text" class="form-control" id="billing-address-line1" name="BillingAddressLine1" required></div>
             </div>
             <div class="form-group">
               <label for="billing-address-line2">Address line 2</label>
@@ -245,15 +245,15 @@
             </div>
             <div class="form-group">
               <label for="billing-address-city">City</label>
-              <div><input type="text" class="form-control" id="billing-address-city" name="BillingAddressCity"></div>
+              <div><input type="text" class="form-control" id="billing-address-city" name="BillingAddressCity" required></div>
             </div>
             <div class="form-group">
               <label for="billing-address-state">State</label>
-              <div><input type="text" class="form-control" id="billing-address-state" name="BillingAddressState"></div>
+              <div><input type="text" class="form-control" id="billing-address-state" name="BillingAddressState" required></div>
             </div>
             <div class="form-group">
               <label for="billing-address-zip">Zip</label>
-              <div><input type="text" class="form-control" id="billing-address-zip" name="BillingAddressZip"></div>
+              <div><input type="number" class="form-control" id="billing-address-zip" name="BillingAddressZip" required></div>
             </div>
           </div>
         </div>
