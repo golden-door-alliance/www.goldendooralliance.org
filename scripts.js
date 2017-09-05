@@ -53,8 +53,18 @@ document.forms['signup-form'].addEventListener('change', function(event) {
   if (event.target.name === 'registeredToVote') {
     if (event.target.value === 'no-green-card') {
       document.querySelector('#voting-address').style.display = 'none';
+      document.querySelector('#address-copy').style.display = 'none';
     } else {
       document.querySelector('#voting-address').style.display = 'block';
+      document.querySelector('#address-copy').style.display = 'block';
     }
+  }
+
+  if (event.target.id === 'same-address') {
+    document.querySelector('#billing-address-line1').value = document.querySelector('#voting-address-line1').value;
+    document.querySelector('#billing-address-line2').value = document.querySelector('#voting-address-line2').value;
+    document.querySelector('#billing-address-city').value = document.querySelector('#voting-address-city').value;
+    document.querySelector('#billing-address-state').value = document.querySelector('#voting-address-state').value;
+    document.querySelector('#billing-address-zip').value = document.querySelector('#voting-address-zip').value;
   }
 });
