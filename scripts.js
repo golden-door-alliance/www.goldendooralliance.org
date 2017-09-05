@@ -48,3 +48,13 @@ form.addEventListener('submit', function(event) {
     form.submit();
   }
 });
+
+document.forms['signup-form'].addEventListener('change', function(event) {
+  if (event.target.name === 'registeredToVote') {
+    if (event.target.value === 'no-green-card') {
+      document.querySelector('#voting-address').style.display = 'none';
+    } else {
+      document.querySelector('#voting-address').style.display = 'block';
+    }
+  }
+});
