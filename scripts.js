@@ -4,7 +4,7 @@ var elements = stripe.elements();
 var card = elements.create('card', { style:
   {
     base: {
-      lineHeight: '1.429'
+      lineHeight: '1.429' // for some reason the text box isn't big enough without this
     }
   }
 });
