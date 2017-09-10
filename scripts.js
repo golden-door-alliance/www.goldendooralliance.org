@@ -4,7 +4,10 @@ var elements = stripe.elements();
 var card = elements.create('card', { style:
   {
     base: {
-      lineHeight: '1.429' // for some reason the text box isn't big enough without this
+      'lineHeight': '1.35',
+      'fontSize': '1.11rem',
+      'color': '#495057',
+      'fontFamily': 'apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif'
     }
   }
 });

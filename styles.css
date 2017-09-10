@@ -5,3 +5,7 @@
 .form-container {
   margin-bottom: 10px;
 }
+
+.StripeElement--focus {
+  border-color: #80BDFF;
+}
