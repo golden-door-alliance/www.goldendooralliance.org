@@ -1,25 +1,25 @@
-var stripe = Stripe('pk_test_9r3MM1jc5TacJk9kNwAOsNg0');
-var elements = stripe.elements();
+// var stripe = Stripe('pk_test_9r3MM1jc5TacJk9kNwAOsNg0');
+// var elements = stripe.elements();
 
-var card = elements.create('card', { style:
-  {
-    base: {
-      'lineHeight': '1.35',
-      'fontSize': '1.11rem',
-      'color': '#495057',
-      'fontFamily': 'apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif'
-    }
-  }
-});
-card.mount('#card-element');
-card.addEventListener('change', function(event) {
-  var displayError = document.getElementById('card-errors');
-  if (event.error) {
-    displayError.textContent = event.error.message;
-  } else {
-    displayError.textContent = '';
-  }
-});
+// var card = elements.create('card', { style:
+//   {
+//     base: {
+//       'lineHeight': '1.35',
+//       'fontSize': '1.11rem',
+//       'color': '#495057',
+//       'fontFamily': 'apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif'
+//     }
+//   }
+// });
+// card.mount('#card-element');
+// card.addEventListener('change', function(event) {
+//   var displayError = document.getElementById('card-errors');
+//   if (event.error) {
+//     displayError.textContent = event.error.message;
+//   } else {
+//     displayError.textContent = '';
+//   }
+// });
 
 var form = document.querySelector('#signup-form');
 form.addEventListener('submit', function(event) {
