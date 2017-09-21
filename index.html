@@ -10,9 +10,46 @@
     <link href="https://goldendooralliance.wufoo.com/css/custom/6/theme.css" rel="stylesheet">
     <link href="https://www.wufoo.com/stylesheets/public/themes/css/Parrotfish.css" rel="stylesheet">
     <style>
+      html {
+        height: 100%;
+      }
+
       body {
-        text-align: left;
+        background-image: url(images/immigrant-family-with-flag-dark-lg.png) ;
+        background-position: center 0%;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size:  cover;
         font-size: medium;
+        margin: 0;
+        min-height: 100%;
+        text-align: left;
+      }
+
+      .mast {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        justify-content: center;
+      }
+
+      .mast h1 {
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      }
+
+      .content-wrapper {
+        background-color: white;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        padding: 3em;
+      }
+
+      .content-wrapper p {
+        color: #323232;
+      }
+
+      .join-button {
+        margin-top: 2em;
       }
 
       .btn-primary {
@@ -33,17 +70,14 @@
         color: #36c9c9;
       }
 
-      .jumbotron {
-        background-color: #36c9c9;
+      .statue-img {
+        margin: 0 auto;
+        display: block;
       }
 
-      .jumbotron h1 {
-        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-        color: white;
-      }
-
-      .blockquote {
-        line-height: 1.25;
+      .statue-caption {
+        font-size: .9em;
+        padding: .5em;
       }
 
       .wufoo-styles {
@@ -57,60 +91,82 @@
         font-size: 95%;
         line-height: 135%;
       }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media screen and (max-width: 400px) {
+        .join-button {
+          margin-top: 2em;
+          margin-bottom: 2em;
+          text-align: center;
+        }
+        .btn-lg {
+          font-size: .9em; /* otherwise, text breaks out of button container */
+        }
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid wufoo-styles">
-      <div class="jumbotron text-center">
-        <h1 class="display-3">Golden Door Alliance</h1>
-        <p class="lead">Advocating for immigrants and immigration in the USA.</p>
+
+      <div class="mast">
+        <h1 class="display-3 text-center">Golden Door Alliance</h1>
+        <p class="lead text-center">Advocating for immigrants and immigration in the USA.</p>
       </div>
+
       <div class="row">
-        <div class="col-md-6">
-          <p><img src="images/immigrant-family-with-flag.jpg" class="img-fluid" alt="Latino parents and daughter holding American flag"></p>
-          <p>
-            Golden Door Alliance is a group of Americans who recognize the importance of immigrants to our country,
-            and who care strongly enough to put a small amount of money and time behind their support.
-          </p>
-          <p>
-            Our goal is to reform America's broken immigration system and make our country more welcoming to immigrants.
-          </p>
-          <p>
-            Our members:
-          </p>
-          <ul>
-            <li>Make an affordable monthly contribution, over 90% of which goes to pro-immigrant candidates in contested elections.</li>
-            <li>Call their elected representatives once a month to support pro-immigrant legislation.</li>
-            <li>Recruit one friend each month (for the first 12 months) to become a member of Golden Door Alliance.</li>
-          </ul>
-          <p>We also hold optional quarterly meetings to meet other members, get updates, and eat food together.</p>
-          <p>
-            If you are an American who believes in the importance of immigrants to our country,
-            we hope you'll join us and take these easy but effective steps to support immigrants in the USA.
-          </p>
-          <p>
-            If you have any questions, email <a href="mailto:info@goldendooralliance.org">info@goldendooralliance.org</a>.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <blockquote class="blockquote text-center">
-            <p class="mb-0">
-              "Give me your tired, your poor,<br>
-              Your huddled masses yearning to breathe free...</br>
-              I lift my lamp beside the golden door!"
-            </p>
-            <footer class="blockquote-footer">Inscribed on the Statue of Liberty</footer>
-          </blockquote>
-          <p><img src="images/statue-of-liberty.jpg" class="img-fluid" alt="The Statue of Liberty"></p>
-        </div>
-      </div>
+        <div class="content-wrapper col-md-9 mx-auto">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <p>
+                Golden Door Alliance is a group of Americans who recognize the importance of immigrants to our country,
+                and who care strongly enough to put a small amount of money and time behind their support.
+              </p>
+              <p>
+                Our goal is to reform America's broken immigration system and make our country more welcoming to immigrants.
+              </p>
+              <p>
+                Our members:
+              </p>
+              <ul>
+                <li>Make an affordable monthly contribution, over 90% of which goes to pro-immigrant candidates in contested elections.</li>
+                <li>Call their elected representatives once a month to support pro-immigrant legislation.</li>
+                <li>Recruit one friend each month (for the first 12 months) to become a member of Golden Door Alliance.</li>
+              </ul>
+              <p>We also hold optional quarterly meetings to meet other members, get updates, and eat food together.</p>
+              <p>
+                If you are an American who believes in the importance of immigrants to our country,
+                we hope you'll join us and take these easy but effective steps to support immigrants in the USA.
+              </p>
+              <p>
+                If you have any questions, email <a href="mailto:info@goldendooralliance.org">info@goldendooralliance.org</a>.
+              </p>
 
-      <p class="text-center"><a href="https://goldendooralliance.wufoo.com/forms/join-the-golden-door-alliance/" class="btn btn-primary btn-lg">
-        Join the Golden Door Alliance
-      </a></p>
-
-      <div>
-        <p class="text-center">&copy; 2017 Golden Door Alliance</p>
+              <p class="join-button"><a href="https://goldendooralliance.wufoo.com/forms/join-the-golden-door-alliance/" class="btn btn-primary btn-lg">
+                Join the Golden Door Alliance
+              </a></p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <img src="images/statue-of-liberty-2.jpg" class="img-fluid statue-img" alt="Latino parents and daughter holding American flag">
+              <blockquote class="statue-caption text-center">
+                <p class="mb-0">
+                  "Give me your tired, your poor,<br>
+                  Your huddled masses yearning to breathe free...</br>
+                  I lift my lamp beside the golden door!"
+                </p>
+                <div class="blockquote-footer">Inscribed on the Statue of Liberty</div>
+              </blockquote>
+            </div>
+          </div>
+          <footer>
+            <p class="text-center">&copy; 2017 Golden Door Alliance</p>
+          </footer>
+        </div>
       </div>
     </div>
   </body>
