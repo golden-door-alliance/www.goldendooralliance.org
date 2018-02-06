@@ -71,12 +71,12 @@ body {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  margin: 0px 5px;
+  margin: 15px 5px;
   background-color: #36c9c9bb;
 }
 
 .nav-pills .nav-link, .nav-pills .show>.nav-link {
-  margin: 0px 5px;
+  margin: 15px 5px;
   background-color: #36c9c977;
   color: #fff;
 }
