@@ -136,6 +136,9 @@ footer {
   .mast {
     height: 200px;
   }
+  .content-wrapper {
+    padding: 2em 1em;
+  }
 }
 
 @media screen and (max-width: 400px) {
