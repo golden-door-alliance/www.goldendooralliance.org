@@ -81,6 +81,10 @@ body {
   color: #fff;
 }
 
+.nav-pills .highlight {
+  background-color: #fb6b6b;
+}
+
 a {
   color: #36c9c9;
 }
